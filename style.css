@@ -8,24 +8,96 @@ h1{
   text-align: center;
 }
 
-body{
-  background-color: gray;
+.card{
+  width: 250px;
+  height: 350px;
+  background-color: black;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;  
+  justify-content: space-between;
 }
 
-@media (min-width: 768px){
+p{
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin: 0 auto;
+  /* display: inline-block; */
+  /* justify-content: center; */
+  display: flex;
+}
+
+.boton{
+  background-color: white;
+  display: block;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
+  margin:20px auto;
+}
+
+body{
+  background-color: rgb(162, 196, 234);
+}
+
+
+
+@media (min-width: 368px){
   body{
   background-color:blue ;
   }
-}
+  .card{
+    width: 350px auto;
+    display: inline-block;
+    flex-direction: column;
+  }
+  .imagen{
+    display: inline-block;
+    width: 0% auto;
+    align-items: center;
+  }
+  p{
+    display: inline-block;
+  }
+  /* .boton{
+    display: inline-block;
+  }*/
+} 
 
-@media (min-width: 992px){
+@media (min-width: 700px){
   body{
     background-color: brown;
   }
+  .card{
+    width: 250px auto;
+    display: inline-block;
+    flex-direction: column;
+  }
+  
 }
 
-@media (min-width: 1200px){
+@media (min-width: 900px){
   body{
     background-color: yellowgreen;
+  }
+  .card{
+    width: 250px auto;
+    display: inline-block;
+    flex-direction: column;
+  }
+  p{
+    font-size: 1rem;
   }
 }
